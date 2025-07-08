@@ -1,5 +1,13 @@
+* {
+    box-sizing: border-box; /* deixa o padding no mesmo tamanho */
+}
 body {
     background-color: rgb(0, 39, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    padding: 20px;
+    max-width: 1200px; /* tamanho maximo da tela */
+    margin: 0 auto; /* macete para centralizar */
 }
 h1 {
     text-align: center;
@@ -8,12 +16,67 @@ h1 {
 }
 h2 {
     color: #050505;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona 20 pixels de espaço abaixo do parágrafo */
     font-size: 24px;
 }
-section {
+main {
+    display: flex;
+    gap: 20px; /* distamciamento entre os itens */
+    margin-bottom: 30px
+}
+.sessao-maior {
     background: #F8F9FA;
     width: 100%; /* Largura ocupada */
     border-radius: 8px; /* Arredonda a borda */
-    padding: 30px; /*29:52 */
+    padding: 30px; /* Adiciona 30 pixels de espaço dentro do elemento */
+    height: 400px; /* altura */
+}
+.area-codigo {
+    background: #050505;
+    height: calc(100% - 70px);
+    border-radius: 8px;
+    padding: 20px; /* distanciou a frase do elemento */
+    color: #F8F9FA;
+    font-size: 14px;
+}
+.area-resultado {
+    background: #F8F9FA;
+    border-radius: 8px;
+    height: calc(100% - 70px);
+    display: flex;
+    align-items: center; /* alinha o item na vertical */
+    justify-content: center; /* alinha o item na horizontal */
+    color: #999;
+}
+.sessao-menor {
+    background: #F8F9FA;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+input {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #051628;
+    border-radius: 6px;
+    border: 2px solid #94A3B8;
+}
+button {
+    background: #37E359;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #F8F9FA;
+    cursor: pointer;
+    font-weight: bold; /* grossura da fonte */
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #26a840dc;
+}
+button:active {
+    transform: scale(0.9);
 }
